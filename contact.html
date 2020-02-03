@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#061948">
+		<meta name="msapplication-navbutton-color" content="#061948">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+		<title>The Shop</title>
+		<!-- <link rel="icon" type="image/ico" sizes="56x56" href="images/favicon.ico"> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+			<header class="header-two">
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-8 col-12">
+								<ul class="left-widget">
+									<li><i class="fa fa-envelope"></i> <a href="#">info@shop.com</a></li>
+									<li><i class="fa fa-phone"></i> +234 1 xxx xxx</li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-sm-4 col-12">
+								<ul class="right-widget">
+									<li><a href="#" class="theme-button-one">Login</a></li>
+									<li><a href="#" class="theme-button-two">Register</a></li>							
+								</ul>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.top-header -->
+
+				<div class="theme-menu-wrapper">
+					<div class="container">
+						<div class="bg-wrapper clearfix">
+							<div class="logo logo-text float-left"><a href="index.html">The Shop</a></div>
+							<!-- ============== Menu Warpper ================ -->
+					   		<div class="menu-wrapper float-left">
+					   			<nav id="mega-menu-holder" class="clearfix">
+								   <ul class="clearfix">
+									    <li class="active"><a href="index.html">Home</a>
+									    </li>
+									    <li><a href="#">Shoes</a>
+									    	<ul class="dropdown">
+									        	<li><a href="shop.html">Men </a></li>
+									        	<li><a href="#">Women </a></li>
+									        	<li><a href="#">Kids </a></li>
+									       </ul>
+									    </li>
+									    <li><a href="#">Bags</a>
+									    	<ul class="dropdown">
+									            <li><a href="#">Men </a></li>
+							    				<li><a href="#">Women </a></li>
+							    				<li><a href="#">Kids </a></li>
+									       </ul>
+									    </li>
+									    <li><a href="#">Clearance Sale</a></li>
+									    <li><a href="contact.html">contact us</a></li>
+								   </ul>
+								</nav> <!-- /#mega-menu-holder -->
+					   		</div> <!-- /.menu-wrapper -->
+					   		<div class="right-widget float-right">
+					   			<ul>
+					   				<li class="cart-icon">
+					   					<a href="cart.html"><i class="flaticon-tool"></i> <span>2</span></a>
+					   				</li>
+					   				<li class="search-option">
+					   					<div class="dropdown">
+					   						<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+											<form action="#" class="dropdown-menu">
+												<input type="text" Placeholder="Enter Your Search">
+												<button><i class="fa fa-search"></i></button>
+											</form>
+					   					</div>
+					   				</li>
+					   			</ul>
+					   		</div> <!-- /.right-widget -->
+						</div> <!-- /.bg-wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.theme-menu-wrapper -->
+			</header>
+
+			
+			<div class="theme-inner-banner section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<h2>Contact Us</h2>
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div>
+
+			<div class="contact-us-section section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2>GET IN TOUCH</h2>
+						<!-- <p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p> -->
+					</div> <!-- /.theme-title-one -->
+					<div class="clearfix main-content no-gutters row">
+						<div class="col-lg-5 col-12"><div class="img-box"></div></div>
+						<div class="col-lg-7 col-12">
+							<div class="form-wrapper">
+								<form action="inc/sendemail.php" class="theme-form-one form-validation" autocomplete="off">
+									<div class="row">
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Name *" name="name"></div>
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Phone *" name="phone"></div>
+										<div class="col-sm-6 col-12"><input type="email" placeholder="Email *" name="email"></div>
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Subject *" name="subject"></div>
+										<div class="col-12"><textarea placeholder="Message" name="message"></textarea></div>
+									</div> <!-- /.row -->
+									<button class="theme-button-one">SEND MESSAGE</button>
+								</form>
+							</div> <!-- /.form-wrapper -->
+						</div> <!-- /.col- -->
+					</div> <!-- /.main-content -->
+				</div> <!-- /.container -->
+
+				<!--Contact Form Validation Markup -->
+				<!-- Contact alert -->
+				<div class="alert-wrapper" id="alert-success">
+					<div id="success">
+						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="wrapper">
+			               	<p>Your message was sent successfully.</p>
+			             </div>
+			        </div>
+			    </div> <!-- End of .alert_wrapper -->
+			    <div class="alert-wrapper" id="alert-error">
+			        <div id="error">
+			           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+			           	<div class="wrapper">
+			               	<p>Sorry!Something Went Wrong.</p>
+			            </div>
+			        </div>
+			    </div> <!-- End of .alert_wrapper -->
+			</div> <!-- /.contact-us-section -->
+
+
+
+			<footer class="theme-footer-two">
+				<div class="bottom-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-12">
+								<p>&copy; Copyrights 2020. All Rights Reserved.</p>
+							</div>
+							<div class="col-md-6 col-12">
+								<ul class="social-icon">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer> 
+	        
+
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s">
+				<i class="fa fa-angle-up" aria-hidden="true"></i>
+			</button>
+			
+
+
+    	<script src="vendor/jquery.2.2.3.min.js"></script>
+		<script src="vendor/popper.js/popper.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/menu/src/js/jquery.slimmenu.js"></script>
+		<script src="vendor/WOW-master/dist/wow.min.js"></script>
+		<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<script src="js/theme.js"></script>
+		</div> 
+	</body>
+</html>
