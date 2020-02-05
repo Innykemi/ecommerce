@@ -143,6 +143,9 @@
   position: relative;
   zoom: 90%;
  }
+ button, button:focus, button:active, a:focus, a:active {box-shadow: none !important;}
+ .form-control:focus {box-shadow: none !important; border-color: #ced4da !important;}
+ .login-button{margin-top: 30px; }
  .main-page-wrapper {overflow-x:hidden;}
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
  h1,h2,h3,h4,h5,h6 {font-family: 'Nunito Sans', sans-serif; color: #232323;}
@@ -336,11 +339,13 @@ body .theme-button-two:hover {background:#ffc401; }
 .theme-title-one h2 {
   position: relative;  padding-bottom: 22px;
   font-size: 1.8em;
+  color: #5a0404;
 }
 .theme-title-one span.span-title {
   font-size: 1.8em;
   position: relative;  padding-bottom: 22px;
   font-weight: 700;
+  color: #5a0404;
 }
 .theme-title-one span.span-text {
   margin-top: 0.6em;
