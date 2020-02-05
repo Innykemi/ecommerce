@@ -149,7 +149,6 @@ $('.add-cart').click(function(event) {
 $('.clear-cart').click(function() {
   shoppingCart.clearCart();
   displayCart();
-  "<h3>No items in cart</h3>"
 });
 
 
@@ -163,7 +162,7 @@ function displayCart() {
       + "<td>" + cartArray[i].price + "</td>"
       + "<td><input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'></td>"
       + "<td>" + cartArray[i].total + "</td>"                       
-      + "<td><button class='delete-item btn btn-danger-filled x-remove' data-name=" + cartArray[i].name + ">X</button></td>" 
+      + "<td><button class='delete-item btn btn-danger-filled x-remove' data-name='" + cartArray[i].name + "'>X</button></td>" 
       +  "</tr>";
   }
   $('.show-cart').html(output);
@@ -177,20 +176,7 @@ $('.show-cart').on("click", ".delete-item", function(event) {
   var name = $(this).data('name')
   shoppingCart.removeItemFromCartAll(name);
   displayCart();
-})
-
-
-// -1
-$('.show-cart').on("click", ".minus-item", function(event) {
-  var name = $(this).data('name')
-  shoppingCart.removeItemFromCart(name);
-  displayCart();
-})
-// +1
-$('.show-cart').on("click", ".plus-item", function(event) {
-  var name = $(this).data('name')
-  shoppingCart.addItemToCart(name);
-  displayCart();
+  console.log("I'm here");
 })
 
 // Item count input
