@@ -1651,6 +1651,9 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
   padding: 1px 5px;
   float: right;
 }
+.item-count.form-control{
+  width: 35%;
+}
 /*----------------------------- Error Page --------------------------*/
 .error-page {text-align: center;margin-bottom: 175px;}
 .error-page h2 {
