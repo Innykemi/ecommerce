@@ -163,9 +163,9 @@ function displayCart() {
     output += "<tr class='cart-item'>"
       + "<td class='image'><img src='images/1.jpg'></td>" 
       + "<td>" + cartArray[i].name + "</td>" 
-      + "<td>" + cartArray[i].price + "</td>"
+      + "<td><span>&#8358;</span>" + cartArray[i].price + "</td>"
       + "<td><input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'></td>"
-      + "<td>" + cartArray[i].total + "</td>"                       
+      + "<td><span>&#8358;</span>" + cartArray[i].total + "</td>"                       
       + "<td><button class='delete-item btn btn-danger-filled x-remove' data-name='" + cartArray[i].name + "'>X</button></td>" 
       +  "</tr>";
   }
